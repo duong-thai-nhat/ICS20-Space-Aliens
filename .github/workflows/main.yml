@@ -18,7 +18,7 @@ jobs:
 
   run-linters:
 
-    name: Linters
+    name: GitHub's Super Linter
 
     runs-on: ubuntu-latest
 
@@ -40,6 +40,6 @@ jobs:
 
           VALIDATE_ALL_CODEBASE: true
 
-          DEFAULT_BRANCH: master
+          DEFAULT_BRANCH: main
 
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
